@@ -1,0 +1,52 @@
+body{
+    background-color:grey;
+}
+#calc_body{
+    margin:0 auto;
+    height:20rem;
+    width:15rem;
+    border:solid #eaec00 1px;
+    background-color:#e5e291;
+}
+input{
+    height: 10%;
+    width:80%;
+    position: relative;
+    background-color:#ffffff;
+}
+
+.num_but{
+    margin:5px;
+    height:40%;
+    width:35%;
+    float:left;
+}
+.number{
+    height: 25%;
+    
+}
+.one{}
+.two{}
+.three{}
+.four{}
+.factoral{
+    float: right;
+}
+.decoration{
+    height: 2rem;
+    width:80%;
+}
+img{
+    height: 2rem;
+    width:80%;
+}
+.sum{
+    height: 10%;
+    width: 90%;
+    position: relative;
+    bottom:1rem;
+}
+.equal{
+    height: 100%;
+    width:100%;
+}
