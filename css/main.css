@@ -8,7 +8,7 @@ body{
     border:solid #eaec00 1px;
     background-color:#e5e291;
 }
-input{
+.display{
     height: 10%;
     width:80%;
     position: relative;
