@@ -1,17 +1,25 @@
 body{
     background-color:grey;
 }
+.fieldset{
+    height: 20rem;
+    width:15rem;
+    border:none;
+}
 .calc{
     margin:0 auto;
     height:20rem;
     width:15rem;
     border:solid #eaec00 1px;
     background-color:#e5e291;
+    box-shadow:0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px rgba(0,0,0,.19);
 }
 #screen{
     height: 10%;
     width:80%;
+    line-height:10%;
     position: relative;
+    text-align:center;
     background-color:#ffffff;
 }
 
@@ -21,6 +29,7 @@ body{
     width:35%;
     float:left;
 }
+.num_but
 
 img{
     height: 2rem;

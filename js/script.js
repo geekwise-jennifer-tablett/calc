@@ -1,3 +1,4 @@
+//brings value of buttons
 function pushButton(buttonValue) {
      if (buttonValue == 'C') {
           document.getElementById('screen').value = '';
@@ -10,7 +11,9 @@ function calculate(equation) {
      var answer = eval(equation);
      document.getElementById('screen').value = answer;
 }
-
+function myFunction(){
+    document.getElementById('second_try').reset();
+};
 
 
 
