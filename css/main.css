@@ -1,12 +1,13 @@
 body{
     background-color:grey;
 }
-.fieldset{
+/*.fieldset{
     height: 20rem;
     width:15rem;
     border:none;
-}
-.calc{
+}*/
+/*calculator body*/
+#second_try{
     margin:0 auto;
     height:20rem;
     width:15rem;
@@ -14,24 +15,53 @@ body{
     background-color:#e5e291;
     box-shadow:0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px rgba(0,0,0,.19);
 }
+/*display screen*/
 #screen{
+    margin:0 auto;
     height: 10%;
-    width:80%;
+    width:90%;
     line-height:10%;
     position: relative;
     text-align:center;
     background-color:#ffffff;
 }
-
+/*buttons*/
 .calc{
+    margin:0;
+}
+#left_but{
     margin:5px;
-    height:40%;
-    width:35%;
+    height:60%;
+    width:60%;
     float:left;
 }
-.num_but
+.num_but{
+    height:2.5rem;
+    width:2.5rem;
+    background-color:#ffb70b;
+    color:#ffffff;
+}
+#right_but{
+    margin:5px;
+    height:60%;
+    width:30%;
+    float:right;
+}
+.func_but{
+    height:3rem;
+    width:3rem;
+    background-color:#ffb038;
+}
+.sum_but{
+    margin:0 auto;
+    height:2rem;
+    width:14rem;
+    background-color:#896100;
+    position: relative;
+    top:2rem;
+}
 
-img{
+/*img{
     height: 2rem;
     width:80%;
-}
+}*/

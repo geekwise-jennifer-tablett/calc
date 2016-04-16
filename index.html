@@ -15,7 +15,7 @@
             <td><input class="calc" type="button" value=2 onclick="pushButton(this.value);"></td>
             <td><input class="calc" type="button" value='+' onclick="pushButton(this.value);"></td>
        </tr>
-       <tr>
+      <!-- <tr>
            <td><input class="calc" type="button" value=3 onclick="pushButton(this.value);"></td>
            <td><input class="calc" type="button" value=4 onclick="pushButton(this.value);"></td>
            <td><input class="calc" type="button" value='-' onclick="pushButton(this.value);"></td>
@@ -29,17 +29,19 @@
 
 
 <form id='second_try'>
-    <input class="calc" id="screen" type="text"> 
-    <input class="calc" type="button" value=1 onclick="pushButton(this.value);">
-    <input class="calc" type="button" value=2 onclick="pushButton(this.value);">
-    <input class='calc' type='button' onclick='myFunction()' value='AC'>
-    <input class="calc" type="button" value=3 onclick="pushButton(this.value);">
-    <input class="calc" type="button" value=4 onclick="pushButton(this.value);">
-    <input class="calc" type="button" value='+' onclick="pushButton(this.value);">
-    <input class="calc" type="button" value='-' onclick="pushButton(this.value);">
-    <input class="calc" type="button" value='=' onclick="calculate(document.getElementById('screen').value);">
-    
-    
+    <input class="calc" id="screen" type="text">
+    <div id='left_but'>
+        <input class="calc num_but" type="button" value=1 onclick="pushButton(this.value);">
+        <input class="calc num_but" type="button" value=2 onclick="pushButton(this.value);">
+        <input class="calc num_but" type="button" value=3 onclick="pushButton(this.value);">
+        <input class="calc num_but" type="button" value=4 onclick="pushButton(this.value);">
+    </div>
+    <div id='right_but'>
+       <input class='calc func_but' type='button' onclick='myFunction()' value='AC'>
+       <input class="calc func_but" type="button" value='+' onclick="pushButton(this.value);">
+       <input class="calc func_but" type="button" value='-' onclick="pushButton(this.value);"> 
+    </div>
+    <input class="calc sum_but" type="button" value='=' onclick="calculate(document.getElementById('screen').value);">
 </form>
 
 
