@@ -4,21 +4,14 @@ var input_element;
 var top_container;
 var top_buttons
 var clear_button;
+var percent_button;
+var division_button;
 var backspace_button;
 var equal_button
 var number_container;
 var number_buttons;
 var operator_container;
 var operator_buttons;
-
-top_buttons = [
-    
-    'AC',
-    '%',
-    '/'
-    
-];
-
 
 //array for intergers
 number_buttons = [
@@ -41,9 +34,7 @@ number_buttons = [
 operator_buttons = [
     '+',
     '-',
-    '*',
-    '/',
-    '%'
+    '*'
 ];
 
 //calculator body design
@@ -72,13 +63,6 @@ var create_numbers_element = function(element_type, element_id){
     element.setAttribute('id',element_id);
     number_container.appendChild(element);
 };
-
-var create_top_buttons_element = function(top_button_element_type,top_button_element_id){
-    var top_button_element = document.createElement(top_button_element_type);
-    top_button_element.setAttribute('id',top_button_element_id);
-    top_container.appendChild(top_button_element);
-};
-
 
 var create_operators_element = function(operator_element_type,operator_element_id){
     var operator_element = document.createElement(operator_element_type);
@@ -163,20 +147,29 @@ document.addEventListener('DOMContentLoaded',function(event){
    
    
    //create other buttons
-    create_numbers_element('button','equal_button');
     create_numbers_element('button','clear_button');
+    create_numbers_element('button','percent_button');
+    create_numbers_element('button','division_button');
     create_numbers_element('button','backspace_button');
+    create_numbers_element('button','equal_button');
     
-    var equal_button = document.getElementById('equal_button');
+    
     var clear_button = document.getElementById('clear_button');
     var backspace_button = document.getElementById('backspace_button');
+    var percent_button = document.getElementById('percent_button');
+    var division_button = document.getElementById('division_button');
+    var equal_button = document.getElementById('equal_button');
+    
 
-    equal_button.textContent = '=';
+    
     clear_button.textContent = 'AC';
+    percent_button.textContent = '%';
+    division_button.textContent = '';
     backspace_button.textContent = 'B';
+    equal_button.textContent = '=';
     
    
-    
+    //making equal button work
     equal_button.addEventListener('click',function (equation) {
      
      if(display.value.length === 0){
@@ -227,7 +220,14 @@ document.addEventListener('DOMContentLoaded',function(event){
     //   =numbers.substring(0,lnth);
     //   document.getElementById('num1').value=newnum;
 //});
-    
+
+   //making percentage work
+   var percent_button = document.getElementById('operator_button_4');
+    percent_button.addEventListener('click',function(percentage) {
+         
+     return percentage = display.value.length*100
+ 
+    })
 });
 
 
