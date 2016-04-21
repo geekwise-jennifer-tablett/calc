@@ -24,10 +24,10 @@ body{
 #top_container{
     margin:0;
     height:5rem;
-    width:15rem;
+    width:20rem;
     display:block;
     position: relative;
-    left:14.8rem;
+    left:32.2rem;
     background-color:#ffffff;
 }
 #number_container{
@@ -40,12 +40,12 @@ body{
     background-color:#ffffff;
 }
 #operator_container{
-    height:25rem;
+    height:20rem;
     width:5rem;
     display: block;
     position: relative;
-    top:-25rem;
-    left:29.7rem;
+    top:-20rem;
+    left:47.2rem;
     background-color:white;
 }
 
@@ -64,7 +64,7 @@ body{
 }
 /*buttons*/
 button{
-    margin:2px;
+    margin:4px;
     height:70px;  
     width:70px;
     display:inline-block;
@@ -79,15 +79,59 @@ button{
 
 /*top container*/
 #clear_button{
+    height:70px;  
+    width:70px;
     position: relative;
-    top:5rem;
+    top:-24rem;
     background-color:#ff940f;
+    color:#ffffff;
+    border:none;
+}
+#percent_button{
+    height:70px;  
+    width:70px;
+    position: relative;
+    top:-24rem;
+    background-color:#ffffff;
+    color:#ffffff;
+    border:1px solid #56503A;
+}
+#division_button{
+    height:70px;  
+    width:70px;
+    position: relative;
+    top:-24rem;
+    background-color:#ffffff;
+    color:#ffffff;
+    border:1px solid #56503A;
+}
+#backspace_button{
+    height:70px;  
+    width:70px;
+    position: relative;
+    top:-28.9rem;
+    left:12.5rem;
+    background-color:#ff940f;
+    color:#ffffff;
+    border:none;
+}
+
+#equal_button{
+    height:70px;  
+    width:70px;
+    position: relative;
+    top:-9.3rem;
+    left: 7.5rem;
+    z-index: 1;
+    background-color:#595b58;
     color:#ffffff;
     border:none;
 }
 
 /*operator buttons*/
 #operator_button_0{
+    height:70px;  
+    width:70px;
     background-color:#828282;
     color:#ffffff;
     border:none;
@@ -113,18 +157,10 @@ button{
     border:none;
 }
 
-#equal_button{
-    background-color:#595b58;
-    color:#ffffff;
-    border:none;
-}
 
 
-#backspace_button{
-    background-color:#ff940f;
-    color:#ffffff;
-    border:none;
-}
+
+
 
 
 

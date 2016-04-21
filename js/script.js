@@ -160,11 +160,14 @@ document.addEventListener('DOMContentLoaded',function(event){
     var division_button = document.getElementById('division_button');
     var equal_button = document.getElementById('equal_button');
     
-
+//for multiply button i class="fa fa-times" aria-hidden="true"
+//for percetn button i class="fa fa-percent" aria-hidden="true"
+//for division button 
+// for delete button i class="fa fa-arrow-circle-left" aria-hidden="true"
     
     clear_button.textContent = 'AC';
-    percent_button.textContent = '%';
-    division_button.textContent = '';
+    percent_button.textContent = 'x/100';
+    division_button.textContent = '/';
     backspace_button.textContent = 'B';
     equal_button.textContent = '=';
     
