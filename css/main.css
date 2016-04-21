@@ -1,67 +1,138 @@
 body{
-    background-color:grey;
+    margin:0 auto;
+    text-align:center;
+    background-color:#d2d2d2;
 }
-/*.fieldset{
-    height: 20rem;
+#calc_body{
+    margin:0 auto;
+    height:20rem;
+    width:10rem;
+    background-color:#ffffff;
+    border-radius: 10px;
+    display:inline-block;
+    box-shadow:2px 2px 2px #f2f2f2 ;
+}
+
+/*containers*/
+#input_element_container{
+    margin:0 auto;
+    height: 10rem;
+    width:20rem;
+    background-color:green;
+}
+#top_container{
+    margin:0;
+    height:5rem;
     width:15rem;
-    border:none;
-}*/
-/*calculator body*/
-#second_try{
+    display:block;
+    position: relative;
+    left:14.7rem;
+    background-color:pink;
+}
+#number_container{
     margin:0 auto;
     height:20rem;
     width:15rem;
-    border:solid #eaec00 1px;
-    background-color:#e5e291;
-    box-shadow:0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px rgba(0,0,0,.19);
-}
-/*display screen*/
-#screen{
-    margin:0 auto;
-    height: 10%;
-    width:90%;
-    line-height:10%;
+    display:block;
     position: relative;
-    text-align:center;
-    background-color:#ffffff;
+    left:-2.5rem;
+    background-color:yellow;
 }
-/*buttons*/
-.calc{
-    margin:0;
-}
-#left_but{
-    margin:5px;
-    height:60%;
-    width:60%;
-    float:left;
-}
-.num_but{
-    height:2.5rem;
-    width:2.5rem;
-    background-color:#ffb70b;
-    color:#ffffff;
-}
-#right_but{
-    margin:5px;
-    height:60%;
-    width:30%;
-    float:right;
-}
-.func_but{
-    height:3rem;
-    width:3rem;
-    background-color:#ffb038;
-}
-.sum_but{
-    margin:0 auto;
-    height:2rem;
-    width:14rem;
-    background-color:#896100;
+#operator_container{
+    height:25rem;
+    width:5rem;
+    display: block;
     position: relative;
-    top:2rem;
+    top:-25rem;
+    left:29.8rem;
+    background-color:white;
 }
 
-/*img{
-    height: 2rem;
-    width:80%;
-}*/
+/*display*/
+#display{
+    width:20rem;
+    height:4rem;
+    border:none;
+    background-color:#ffffff;
+    font-size:3.5rem;
+    display:inline-block;
+    margin:1rem 0 3rem 0;
+    text-align:right;
+    font-family: 'Roboto', sans-serif;
+    border-bottom-style: inset;
+}
+/*buttons*/
+button{
+    margin:2px;
+    height:70px;  
+    width:70px;
+    display:inline-block;
+    font-size:3.5rem;
+    border-radius: 35px;
+    border:1px solid #56503A;
+    font-family: 'Yantramanav', sans-serif;
+    color:#3A3924;
+    opacity:.8;
+    background-color:#ffffff;
+}
+
+/*top container*/
+#clear_button{
+    
+    background-color:#ff940f;
+    color:#ffffff;
+    border:none;
+}
+
+/*operator buttons*/
+#operator_button_0{
+    background-color:#828282;
+    color:#ffffff;
+    border:none;
+}
+#operator_button_1{
+    background-color:#828282;
+    color:#ffffff;
+    border:none;
+}
+#operator_button_2{
+    background-color:#828282;
+    color:#ffffff;
+    border:none;
+}
+#operator_button_3{
+    background-color:#828282;
+    color:#ffffff;
+    border:none;
+}
+#operator_button_4{
+    background-color:#828282;
+    color:#ffffff;
+    border:none;
+}
+
+#equal_button{
+    background-color:#595b58;
+    color:#ffffff;
+    border:none;
+}
+
+
+#backspace_button{
+    background-color:#ff940f;
+    color:#ffffff;
+    border:none;
+}
+
+
+
+/*
+.pressed{
+    color:white;
+    transition:.4s;
+}
+.released{
+     color:black;
+     transition:.4s;
+}
+*/
