@@ -15,15 +15,15 @@ var operator_buttons;
 
 //array for intergers
 number_buttons = [
-    '9',
-    '8',
     '7',
-    '6',
-    '5',
+    '8',
+    '9',
     '4',
-    '3',
-    '2',
+    '5',
+    '6',
     '1',
+    '2',
+    '3',
     '0',
     '.',
     '()'
@@ -166,7 +166,7 @@ document.addEventListener('DOMContentLoaded',function(event){
 // for delete button i class="fa fa-arrow-circle-left" aria-hidden="true"
     
     clear_button.textContent = 'AC';
-    percent_button.textContent = 'x/100';
+    percent_button.textContent = 'mod';
     division_button.textContent = '/';
     backspace_button.textContent = 'B';
     equal_button.textContent = '=';
@@ -225,10 +225,16 @@ document.addEventListener('DOMContentLoaded',function(event){
 //});
 
    //making percentage work
-   var percent_button = document.getElementById('operator_button_4');
-    percent_button.addEventListener('click',function(percentage) {
+   var percent_button = document.getElementById('percent_button');
+    percent_button.addEventListener('click',function() {
          
-     return percentage = display.value.length*100
+        var a = document.getElementById('display').value;
+        // var b = document.getElementById('percent_button').value;
+        var o = (a/100);
+        // document.getElementById('input_element').value = o;
+        display.value = o;
+        console.log(o);
+    
  
     })
 });
