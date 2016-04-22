@@ -1,16 +1,16 @@
 var calc_body;
-var input_element_container;
+//var input_element_container;
 var input_element;
-var top_container;
+//var top_container;
 var top_buttons
 var clear_button;
 var percent_button;
 var division_button;
 var backspace_button;
 var equal_button
-var number_container;
+//var number_container;
 var number_buttons;
-var operator_container;
+//var operator_container;
 var operator_buttons;
 
 //array for intergers
@@ -32,9 +32,9 @@ number_buttons = [
 
 //array for right side operations
 operator_buttons = [
-    '+',
+    '*',
     '-',
-    '*'
+    '+'
 ];
 
 //calculator body design
@@ -45,29 +45,29 @@ input_element = document.createElement('input');
 input_element.setAttribute('id','display');
 
 //setting id for containers
-input_element_container = document.createElement('div');
-input_element_container.setAttribute('id','input_element_container');
+// input_element_container = document.createElement('div');
+// input_element_container.setAttribute('id','input_element_container');
 
-top_container = document.createElement('div');
-top_container.setAttribute('id','top_container');
+// top_container = document.createElement('div');
+// top_container.setAttribute('id','top_container');
 
-number_container = document.createElement('div');
-number_container.setAttribute('id','number_container');
+// number_container = document.createElement('div');
+// number_container.setAttribute('id','number_container');
 
-operator_container = document.createElement('div');
-operator_container.setAttribute('id','operator_container');
+// operator_container = document.createElement('div');
+// operator_container.setAttribute('id','operator_container');
 
 //create elements
 var create_numbers_element = function(element_type, element_id){
     var element = document.createElement(element_type);
     element.setAttribute('id',element_id);
-    number_container.appendChild(element);
+    calc_body.appendChild(element);
 };
 
 var create_operators_element = function(operator_element_type,operator_element_id){
     var operator_element = document.createElement(operator_element_type);
     operator_element.setAttribute('id',operator_element_id);
-    operator_container.appendChild(operator_element);
+    calc_body.appendChild(operator_element);
 };
 
 //recognizes keyboard data
@@ -104,11 +104,11 @@ document.addEventListener('DOMContentLoaded',function(event){
     listen_for_keycode();
     
     document.body.appendChild(calc_body);
-    calc_body.appendChild(input_element_container);
-    input_element_container.appendChild(input_element);
-    calc_body.appendChild(top_container);
-    calc_body.appendChild(number_container);
-    calc_body.appendChild(operator_container);
+    //calc_body.appendChild(input_element_container);
+    calc_body.appendChild(input_element);
+    //calc_body.appendChild(top_container);
+    //calc_body.appendChild(number_container);
+    //calc_body.appendChild(operator_container);
     
     
     
@@ -166,7 +166,7 @@ document.addEventListener('DOMContentLoaded',function(event){
 // for delete button i class="fa fa-arrow-circle-left" aria-hidden="true"
     
     clear_button.textContent = 'AC';
-    percent_button.textContent = 'mod';
+    percent_button.textContent = '%';
     division_button.textContent = '/';
     backspace_button.textContent = 'B';
     equal_button.textContent = '=';
@@ -227,6 +227,7 @@ document.addEventListener('DOMContentLoaded',function(event){
    //making percentage work
    var percent_button = document.getElementById('percent_button');
     percent_button.addEventListener('click',function() {
+         
          
         var a = document.getElementById('display').value;
         // var b = document.getElementById('percent_button').value;

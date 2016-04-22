@@ -3,10 +3,10 @@ body{
     text-align:center;
     background-color:#d2d2d2;
 }
-#calc_body{
+div{
     margin:0 auto;
-    height:20rem;
-    width:10rem;
+    height:40rem;
+    width:20rem;
     background-color:#ffffff;
     border-radius: 10px;
     display:inline-block;
@@ -14,40 +14,40 @@ body{
 }
 
 /*containers*/
-#input_element_container{
-    margin:0 auto;
-    height: 10rem;
-    width:20rem;
-    border:solid 1p #dbd9d9;
-    background-color:#ffffff;
-}
-#top_container{
-    margin:0;
-    height:5rem;
-    width:20rem;
-    display:block;
-    position: relative;
-    left:32.2rem;
-    background-color:#ffffff;
-}
-#number_container{
-    margin:0 auto;
-    height:20rem;
-    width:15rem;
-    display:block;
-    position: relative;
-    left:-2.5rem;
-    background-color:#ffffff;
-}
-#operator_container{
-    height:20rem;
-    width:5rem;
-    display: block;
-    position: relative;
-    top:-20rem;
-    left:47.2rem;
-    background-color:white;
-}
+/*#input_element_container{*/
+/*    margin:0 auto;*/
+/*    height: 10rem;*/
+/*    width:20rem;*/
+/*    border:solid 1p #dbd9d9;*/
+/*    background-color:#ffffff;*/
+/*}*/
+/*#top_container{*/
+/*    margin:0;*/
+/*    height:5rem;*/
+/*    width:20rem;*/
+/*    display:block;*/
+/*    position: relative;*/
+/*    left:32.2rem;*/
+/*    background-color:#ffffff;*/
+/*}*/
+/*#number_container{*/
+/*    margin:0 auto;*/
+/*    height:20rem;*/
+/*    width:15rem;*/
+/*    display:block;*/
+/*    position: relative;*/
+/*    left:-2.5rem;*/
+/*    background-color:#ffffff;*/
+/*}*/
+/*#operator_container{*/
+/*    height:20rem;*/
+/*    width:5rem;*/
+/*    display: block;*/
+/*    position: relative;*/
+/*    top:-20rem;*/
+/*    left:47.2rem;*/
+/*    background-color:white;*/
+/*}*/
 
 /*display*/
 #display{
@@ -68,13 +68,15 @@ button{
     height:70px;  
     width:70px;
     display:inline-block;
-    font-size:3.5rem;
+    font-size:2.5rem;
     border-radius: 35px;
     border:1px solid #56503A;
     font-family: 'Yantramanav', sans-serif;
     color:#3A3924;
     opacity:.8;
     background-color:#ffffff;
+    position: relative;
+    top:2.5rem;
 }
 
 /*top container*/
@@ -82,7 +84,8 @@ button{
     height:70px;  
     width:70px;
     position: relative;
-    top:-24rem;
+    top:-17rem;
+    left:-14.6rem;
     background-color:#ff940f;
     color:#ffffff;
     border:none;
@@ -91,26 +94,28 @@ button{
     height:70px;  
     width:70px;
     position: relative;
-    top:-24rem;
+    top:-21.9rem;
+    left:5rem;
     background-color:#ffffff;
-    color:#ffffff;
+    color:#000000;
     border:1px solid #56503A;
 }
 #division_button{
     height:70px;  
     width:70px;
     position: relative;
-    top:-24rem;
+    top:-21.9rem;
+    left:5rem;
     background-color:#ffffff;
-    color:#ffffff;
+    color:#000000;
     border:1px solid #56503A;
 }
 #backspace_button{
     height:70px;  
     width:70px;
     position: relative;
-    top:-28.9rem;
-    left:12.5rem;
+    top:-21.9rem;
+    left:5rem;
     background-color:#ff940f;
     color:#ffffff;
     border:none;
@@ -119,10 +124,9 @@ button{
 #equal_button{
     height:70px;  
     width:70px;
-    position: relative;
-    top:-9.3rem;
-    left: 7.5rem;
-    z-index: 1;
+    /*position: relative;*/
+    top:-2.1rem;
+    left:.2rem ;
     background-color:#595b58;
     color:#ffffff;
     border:none;
@@ -135,16 +139,25 @@ button{
     background-color:#828282;
     color:#ffffff;
     border:none;
+    position: relative;
+    top:-12.1rem;
+    right:-14.7rem;
 }
 #operator_button_1{
     background-color:#828282;
     color:#ffffff;
     border:none;
+    position: relative;
+    top:-7.5rem;
+    right:-9.8rem;
 }
 #operator_button_2{
     background-color:#828282;
     color:#ffffff;
     border:none;
+    position: relative;
+    top:-2.4rem;
+    right:-5rem;
 }
 #operator_button_3{
     background-color:#828282;
@@ -156,14 +169,49 @@ button{
     color:#ffffff;
     border:none;
 }
-
-
-
-
-
-
-
-
+#number_button_3{
+    position: relative;
+    top:7.4rem;
+    left:-14.6rem;
+}
+#number_button_4{
+    position: relative;
+    left:4.9rem;
+}
+#number_button_5{
+    position: relative;
+    left:4.9rem;
+}
+#number_button_6{
+    position: relative;
+    top:7.4rem;
+    left:-9.7rem;
+}
+#number_button_7{
+    position: relative;
+    top:7.4rem;
+    left:-9.7rem;
+}
+#number_button_8{
+    position: relative;
+    left:9.8rem;
+}
+#number_button_9{
+    position: relative;
+    top:7.4rem;
+    left:-4.7rem;
+}
+#number_button_10{
+    position: relative;
+    top:7.4rem;
+    left:-4.8rem;
+}
+#number_button_11{
+   position: relative;
+    top:7.4rem;
+    left:-4.8rem;
+}
+}
 /*
 .pressed{
     color:white;
